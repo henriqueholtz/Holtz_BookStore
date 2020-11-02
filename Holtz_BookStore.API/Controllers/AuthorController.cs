@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace Holtz_BookStore.API.Controllers
 {
+    [RoutePrefix("Authors")]
     public class AuthorController : Controller
     {
         private IAuthorRepository repository;

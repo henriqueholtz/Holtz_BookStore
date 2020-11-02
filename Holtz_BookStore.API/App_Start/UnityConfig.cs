@@ -20,6 +20,7 @@ namespace Holtz_BookStore.API
 
             container.RegisterType<Datacontext, Datacontext>();
             container.RegisterType<IAuthorRepository, AuthorRepository>();
+            container.RegisterType<IBookRepository, BookRepository>();
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
 
